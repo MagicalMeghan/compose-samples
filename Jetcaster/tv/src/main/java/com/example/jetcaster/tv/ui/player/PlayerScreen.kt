@@ -95,6 +95,7 @@ import java.time.Duration
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.launch
 
+@androidx.annotation.OptIn(UnstableApi::class)
 @Composable
 fun PlayerScreen(
     backToHome: () -> Unit,
@@ -127,6 +128,7 @@ fun PlayerScreen(
     }
 }
 
+@UnstableApi
 @Composable
 private fun Player(
     episodePlayerState: EpisodePlayerState,
